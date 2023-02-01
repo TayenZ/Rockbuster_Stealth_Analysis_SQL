@@ -1,2 +1,2 @@
-# sql
+# SQL
 for SQL queries

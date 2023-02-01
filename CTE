@@ -1,0 +1,16 @@
+/* Which movies contributed the most/least to revenue gain */
+WITH film_revenue (title,revenue) 
+AS (SELECT title
+       , SUM(p.amount) AS revenue 
+       FROM film f
+       INNER JOIN inventory i ON f.film_id = i.film_id
+       INNER JOIN rental r ON i.inventory_id = r.inventory_id
+       INNER JOIN payment p ON r.rental_id = p.rental_id
+       GROUP BY title) 
+SELECT title,
+       revenue
+FROM film_revenue
+WHERE revenue = (SELECT MAX(revenue)
+				  FROM film_revenue) 
+	  or revenue = (SELECT MIN(revenue)
+				  FROM film_revenue)

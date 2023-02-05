@@ -10,5 +10,5 @@ The Rockbuster Stealth Management Board has asked a series of business questions
 4. Where are customers with a high lifetime value based? 
 5. Do sales figures vary between geographic regions? 
 ## Deliverables
-1. Write moderately complex SQL queries to answer business questions. ● Present your SQL results to business managers by creating visualizations and telling a compelling story. 
-2. Present your SQL results to your technical colleagues using Excel and by creating a data dictionary. 
+1. Write moderately complex SQL queries to answer business questions. Present the SQL results to business managers by creating visualizations and telling a compelling story. 
+2. Present the SQL results to technical colleagues using Excel and by creating a data dictionary. 
